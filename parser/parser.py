@@ -35,7 +35,7 @@ with open('university_data.csv', 'rb') as f:
 		if student.campus in pueblos:
 			student.campus = {'campus' : student.campus, 'latitude' : pueblos[student.campus][0], 'longitude' : pueblos[student.campus][1]}
 		elif campuses[student.campus] in pueblos:
-			student.campus = {'campus' : campuses[student.campus], 'latitude' : pueblos[campuses[student.campus]][0], 'longitude' : pueblos[campuses[student.campus]][1]}
+			student.campus = {'campus' : student.campus, 'latitude' : pueblos[campuses[student.campus]][0], 'longitude' : pueblos[campuses[student.campus]][1]}
 
 	json_out = jsonpickle.encode(admitted_students)
 

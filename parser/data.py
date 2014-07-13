@@ -5,9 +5,9 @@ class AdmittedStudent:
 	:param str gender: student gender
 	:param float gpa: student gpa
 	:param home: students home town and coordinates
-	:type home: dict of str, with keys 'pueblo', 'lat', and 'long'
+	:type home: dict of str, with keys 'pueblo', 'latitude', and 'longitude'
 	:param campus: students campus and coordinates
-	:type campus: dict of str, with keys 'campus', 'lat', and 'long'
+	:type campus: dict of str, with keys 'campus', 'latitude', and 'longitude'
 	:param str major: student major
 	:param int igs: student igs
 			
@@ -17,7 +17,7 @@ class AdmittedStudent:
 		self.id = uid
 		self.gender = gender
 		self.gpa = gpa
-		self.home = location_home
+		self.home = home
 		self.campus = campus
 		self.major = major
 		self.igs = igs
